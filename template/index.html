@@ -4,16 +4,111 @@
 
 <div class="container">
     <br><br>
-    <h3 class="display-6">
-        <span class = 'fs-2'>Welcome to End to Face Recognition Web App Project </span>
-    </h3>
+    <h3 class="display-6"> Welcome to End to Face Recognition Web App Project</h3>
+        <br>
+        <img src="/static/images/content/modules.svg" class="img-fluid" height="100" align ="center" alt="Modules Architecture Diagram">
+            <p class="fs-5">
+                It's training machine leanring model for face recognition. Whereas in second module 
+                focus develop web app (API) and integrate our machine learning model.
+            </p>
+        <br>
     <br>
-    <p>
-        <span class = 'fs-5'>Content</span>
+    
+    <br>
+
+    <h4 class="fs-3 fw-semibold">
+        1. Conceptual Foundation
+    </h4>
+
+    <p class="fs-5">
+            Face recognition is a computer vision technique that involves detecting and analyzing
+        human facial features to identify or classify individuals. In this project, the focus
+        is on gender classification using facial recognition. The theoretical basis lies in the
+        idea that facial structures contain distinguishable patterns that can be mathematically
+        represented and classified. By leveraging machine learning models, these patterns are
+        extracted, transformed into feature vectors, and used to predict whether a detected
+        face belongs to a male or female category. The system integrates traditional computer
+        vision methods like Haar Cascade classifiers with modern machine learning algorithms
+        to achieve reliable predictions.
     </p>
+
+    <br>
+
+    <h4 class="fs-3 fw-semibold mt-4">
+        2. Machine Learning Pipeline
+    </h4>
+
+    <p class="fs-5">
+            The pipeline begins with face detection using Haar Cascade Classifiers, which scan
+        grayscale images to locate regions of interest (ROI) corresponding to faces. Once
+        detected, these ROIs undergo preprocessing steps such as normalization, resizing,
+        and flattening to ensure consistency in input data. Principal Component Analysis (PCA)
+        is applied to reduce dimensionality and extract key features, producing eigenfaces
+        that represent the most significant variations in facial structures. These eigenfaces
+        serve as compact and informative inputs to the classification model.
+    </p>
+
+    <br>
+
+    <h4 class="fs-3 fw-semibold mt-4">
+        3. Classification and Web Integration
+    </h4>
+
+    <p class="fs-5">
+            The classification stage employs a Support Vector Machine (SVM) model trained on
+        labeled datasets of male and female faces. The SVM predicts gender and outputs
+        confidence scores. This pipeline is integrated into a Flask web application that
+        allows users to upload images and view predictions in real time. The application
+        displays annotated images, grayscale ROIs, eigen images, and confidence scores,
+        making the system transparent and educational.
+    </p>
+
+    <br>
+
+    <h4 class="fs-3 fw-semibold mt-4">
+        4. Five Key Technical Components
+    </h4>
+
+    <ul class="fs-5">
+        <li>
+            <strong>Face Detection using Haar Cascade:</strong>
+            Detects facial regions efficiently using grayscale image scanning.
+        </li>
+        <li>
+            <strong>Preprocessing and Normalization:</strong>
+            Standardizes images through resizing, normalization, and vectorization.
+        </li>
+        <li>
+            <strong>Feature Extraction using PCA (Eigenfaces):</strong>
+            Reduces dimensionality while retaining essential facial features.
+        </li>
+        <li>
+            <strong>Classification using SVM:</strong>
+            Predicts gender with confidence scores using robust decision boundaries.
+        </li>
+        <li>
+            <strong>Flask Web Integration:</strong>
+            Enables user interaction, file uploads, and real-time prediction display.
+        </li>
+    </ul>
+
+    <br>
+
+    <h4 class="fs-3 fw-semibold mt-4">
+        5. Deployment
+    </h4>
+    <p class="fs-5">
+        We push our code in Github and connect our in Render.
+    </p> 
+    <img src="/static/images/content/deployment.svg" height="500" class="image-fluid" alt="">
 
 </div>
 
-
 {% endblock %}
+
+
+
+
+
+
 
