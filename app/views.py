@@ -61,9 +61,7 @@ import matplotlib.image as matimg
 from flask import render_template, request
 from app.face_recognition import face_Recognition_pipeline
 
-# ======================================
-# ABSOLUTE PATH CONFIGURATION (CRITICAL)
-# ======================================
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # BASE_DIR → Flask_app/
