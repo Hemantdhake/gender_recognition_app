@@ -1,8 +1,8 @@
 Flask==2.2.5
 joblib==1.2.0
-numpy==1.23.5
+numpy
 opencv-python-headless==4.7.0.72
-pandas==1.5.3
+pandas
 Pillow==9.0.1
 python-dateutil==2.8.2
 pytz==2021.3
