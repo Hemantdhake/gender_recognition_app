@@ -7,5 +7,7 @@ Pillow==9.0.1
 python-dateutil==2.8.2
 pytz==2021.3
 scikit-learn==1.2.2
-Werkzeug==2.0.3
 gunicorn
+setuptools
+wheel 
+build
