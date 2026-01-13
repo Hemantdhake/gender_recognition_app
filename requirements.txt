@@ -3,10 +3,10 @@ joblib==1.2.0
 numpy
 opencv-python-headless==4.7.0.72
 pandas
-Pillow==9.0.1
+Pillow
 python-dateutil==2.8.2
-pytz==2021.3
-scikit-learn==1.2.2
+pytz
+scikit-learn
 gunicorn
 setuptools
 wheel
