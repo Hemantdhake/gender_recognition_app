@@ -9,5 +9,5 @@ pytz==2021.3
 scikit-learn==1.2.2
 gunicorn
 setuptools
-wheel 
+wheel
 build
